@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <ImageView
+    android:id="@+id/detailOwnerImage"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:padding="5dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.1"/>
+
+  <TextView
+    android:id="@+id/detailOwnerName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    android:padding="5dp"
+    android:text="Test Text"
+    android:textColor="@android:color/black"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:layout_marginTop="20dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/detailOwnerImage"/>
+
+  <TextView
+    android:id="@+id/detailRepoName"
+    android:layout_width="wrap_content"
+    android:textAlignment="center"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:text="Test Text"
+    android:textColor="@android:color/holo_orange_dark"
+    android:textSize="14sp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/detailOwnerName"/>
+
+  <TextView
+    android:id="@+id/detailForks"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:text="Test Text"
+    android:textColor="@android:color/holo_green_dark"
+    android:textAlignment="center"
+    android:textSize="14sp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/detailRepoName"/>
+
+  <TextView
+    android:id="@+id/detailWatchers"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:textAlignment="center"
+    android:textColor="@android:color/holo_blue_bright"
+    android:text="Test Text"
+    android:textSize="14sp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/detailForks"/>
+
+  <TextView
+    android:id="@+id/detailOpenIssues"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:textColor="@android:color/holo_red_dark"
+    android:textAlignment="center"
+    android:text="Test Text"
+    android:textSize="14sp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/detailWatchers"/>
+
+  <TextView
+    android:id="@+id/detailDescription"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@android:color/holo_orange_light"
+    android:padding="5dp"
+    android:text="Test TextTest TextTest TextTest Text"
+    android:textAlignment="center"
+    android:textSize="13sp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/detailOpenIssues"/>
+
+</android.support.constraint.ConstraintLayout>
